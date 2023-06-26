@@ -1,0 +1,22 @@
+ul {
+    padding: 0;
+}
+.contactsItem {
+    margin-top: 15px;
+    display: flex;
+    align-items: center
+
+}
+.span {
+display: inline-block;
+    width: 162px;
+    margin-right: 5px;
+}
+
+.contactsBtn {
+    display: inline-block;
+    width: 40px;
+    /* margin-left: 15px; */
+    background-color: inherit;
+    border: none;
+}
