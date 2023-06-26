@@ -21,32 +21,35 @@ export default function App() {
     dispatch(refreshUser());
   }, [dispatch]);
 
-  return ( !isRefreshing &&
-    <div>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route
-            path="/phonebook"
-            element={
-              <PrivateRoute redirectTo="/login" component={<Phonebook />} />
-            }
-          />
-          <Route
-            path="register"
-            element={
-              <PublicRoute redirectTo="/phonebook" component={<Register />} />
-            }
-          />
-          <Route
-            path="login"
-            element={
-              <PublicRoute redirectTo="/phonebook" component={<Login />} />
-            }
-          />
-          <Route path="*" element={<Home />} />
-          <Route />
-        </Route>
-      </Routes>
-    </div>)
+  return (
+    !isRefreshing && (
+      <div>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route
+              path="/phonebook"
+              element={
+                <PrivateRoute redirectTo="/login" component={<Phonebook />} />
+              }
+            />
+            <Route
+              path="register"
+              element={
+                <PublicRoute redirectTo="/phonebook" component={<Register />} />
+              }
+            />
+            <Route
+              path="login"
+              element={
+                <PublicRoute redirectTo="/phonebook" component={<Login />} />
+              }
+            />
+            <Route path="*" element={<Home />} />
+            <Route />
+          </Route>
+        </Routes>
+      </div>
+    )
+  );
 }

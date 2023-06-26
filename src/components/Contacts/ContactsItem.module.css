@@ -9,14 +9,13 @@ ul {
 }
 .span {
 display: inline-block;
-    width: 162px;
+    width: 250px;
     margin-right: 5px;
 }
 
 .contactsBtn {
     display: inline-block;
-    width: 40px;
-    /* margin-left: 15px; */
+    width: 60px;
     background-color: inherit;
     border: none;
 }
