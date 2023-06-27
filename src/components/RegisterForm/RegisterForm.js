@@ -31,7 +31,7 @@ export const RegisterForm = () => {
           name="email"
           className={css.input}
           // pattern=""
-          // title=""
+          title="Mail must have @ and at least 2 characters after the dot"
           required
         />
       </label>
