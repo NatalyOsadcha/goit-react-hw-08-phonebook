@@ -52,8 +52,8 @@ export default function PhonebookForm() {
         type="text"
         name="name"
         className={css.input}
-        // pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"
-        // title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+        pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"
+        title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
         required
         value={name}
         onChange={handleChange}

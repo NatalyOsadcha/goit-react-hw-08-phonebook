@@ -22,17 +22,33 @@ export const RegisterForm = () => {
     <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
       <label className={css.label}>
         Username
-        <input type="text" name="name" className={css.input}/>
+        <input type="text" name="name" className={css.input} required/>
       </label>
       <label className={css.label}>
         Email
-        <input type="email" name="email" className={css.input}/>
+        <input
+          type="email"
+          name="email"
+          className={css.input}
+          // pattern=""
+          // title=""
+          required
+        />
       </label>
       <label className={css.label}>
         Password
-        <input type="password" name="password" className={css.input}/>
+        <input
+          type="password"
+          name="password"
+          className={css.input}
+          pattern="[0-9a-zA-Z!@#$%^&*]{7,}"
+          title="Login must contain at least 7 characters"
+          required
+        />
       </label>
-      <button type="submit" className={css.button} >Register</button>
+      <button type="submit" className={css.button}>
+        Register
+      </button>
     </form>
   );
 };
